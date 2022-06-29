@@ -16,13 +16,13 @@
 		greenContainer: `bg-[#D1EFCB]`,
 		containerTitle: `text-2xl font-bold`,
 		containerInfo: `flex flex-col gap-4 w-full`,
-		containerImage: `w-1/4 hidden md:block`,
+		containerImage: `w-1/4 hidden sm:block`,
 
-		stepItems: `p-4 gap-2 grid lg:grid-cols-3 justify-center items-center max-w-6xl`,
+		stepItems: `p-4 gap-4 grid md:grid-cols-3 justify-center items-center max-w-6xl`,
 		stepItem: `flex flex-col justify-center items-center`,
 		stepImage: `h-40`,
 		// stepInfo: `invisible lg:visible`,
-		stepInfo: `text-center hidden lg:block`,
+		stepInfo: `text-center hidden sm:block sm:max-w-md`,
 		stepTitle: `text-xl font-bold`,
 
 		containerInfoTitle: `text-xl font-bold`,
