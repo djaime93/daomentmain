@@ -1,8 +1,8 @@
 <script>
 	const style = {
-		warpper: `bg-[#071E26] px-4 py-6 text-[#D1EFCB] flex`,
-		logo: `max-w-40  max-h-40`,
-		infoWrapper: `flex flex-col px-10 justify-end items-end w-full`,
+		warpper: `bg-[#071E26] px-10 py-6 text-[#D1EFCB] flex`,
+		logo: `flex justify-start items-start max-w-40  max-h-40`,
+		infoWrapper: `flex flex-col justify-end items-end w-full`,
 		inline: `items-center`,
 		link: ``
 	};

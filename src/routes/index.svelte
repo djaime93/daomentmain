@@ -4,14 +4,15 @@
 	};
 
 	const style = {
-		wrapper: `bg-white`,
-		banner: `p-10 bg-white grid md:grid-cols-2 items-center`,
+		wrapper: `bg-white flex justify-center items-center w-full `,
+		bannerContainer: `px-10 py-6 flex justify-center items-center`,
+		banner: `bg-white grid md:grid-cols-2 items-center max-w-6xl`,
 		bannerImageContainer: `w-10%`,
 		bannerImage: `max-w-10`,
 		tagLine: `flex flex-col justify-center items-center`,
 		investButton: `py-1 px-6 bg-[#D1EFCB]`,
 
-		container: `p-6 flex flex-col justify-center items-center`,
+		container: `px-10 py-6 flex flex-col justify-center items-center`,
 		containerContent: `flex justify-center items-center gap-6 max-w-6xl`,
 		greenContainer: `bg-[#D1EFCB]`,
 		containerTitle: `text-2xl font-bold`,
@@ -19,7 +20,7 @@
 		containerImage: `w-1/4 hidden sm:block`,
 
 		stepItems: `p-4 gap-4 grid md:grid-cols-3 justify-center items-center max-w-6xl`,
-		stepItem: `flex flex-col justify-center items-center`,
+		stepItem: `flex flex-col justify-center items-center gap-6`,
 		stepImage: `h-40`,
 		// stepInfo: `invisible lg:visible`,
 		stepInfo: `text-center hidden sm:block sm:max-w-md`,
@@ -43,8 +44,23 @@
 
 <div id={style.wrapper}>
 	<!--Landing-->
+	<div class={style.bannerContainer}>
+		<div class={style.banner}>
+			<div class={style.bannerImage}>
+				<img class={style.bannerImage} alt="Daoment illustration" src="/images/ilustracion.png" />
+			</div>
+			<div class={style.tagLine}>
+				<img
+					class="illustration"
+					alt="Daoment Democratized Real Estate Investing"
+					src="/images/DREI.svg"
+				/>
 
-	<div class={style.banner}>
+				<a class={style.investButton} href="#"> Join Now </a>
+			</div>
+		</div>
+	</div>
+	<!-- <div class={style.banner}>
 		<div class={style.bannerImage}>
 			<img class={style.bannerImage} alt="Daoment illustration" src="/images/ilustracion.png" />
 		</div>
@@ -57,7 +73,7 @@
 
 			<a class={style.investButton} href="#"> Join Now </a>
 		</div>
-	</div>
+	</div> -->
 
 	<!--Adquiere Propiedades Mexicanas-->
 	<div class={`${style.container} ${style.greenContainer}`}>
@@ -150,10 +166,10 @@
 		<div id="sign-up">
 			<form action="action_page.php">
 				<div class={style.signUpForm}>
-					<h1>Sign Up</h1>
+					<h1 class="text-center">Get notifications about our first tokenized property</h1>
 
 					<label for="email"><b>Email</b></label>
-					<input type="text" placeholder="Enter Email" name="email" required />
+					<input class="text-center" type="text" placeholder="Enter Email" name="email" required />
 
 					<a class={style.button} on:click={sendEmailAddress} href="/emailsent">Enter</a>
 				</div>
