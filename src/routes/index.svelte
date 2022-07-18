@@ -5,17 +5,17 @@
 
 	const style = {
 		wrapper: `bg-white flex justify-center items-center w-full `,
-		bannerContainer: `px-10 py-6 flex justify-center items-center`,
+		bannerContainer: `px-10 py-20 flex justify-center items-center`,
 		banner: `bg-white grid md:grid-cols-2 items-center max-w-6xl`,
 		bannerImageContainer: `w-10%`,
 		bannerImage: `max-w-10`,
 		tagLine: `flex flex-col justify-center items-center`,
 		investButton: `py-1 px-6 bg-[#D1EFCB]`,
 
-		container: `px-10 py-6 flex flex-col justify-center items-center`,
-		containerContent: `flex justify-center items-center gap-6 max-w-6xl`,
+		container: `px-10 py-20 flex flex-col justify-center items-center`,
+		containerContent: `flex justify-center items-center gap-6 max-w-6xl pt-6`,
 		greenContainer: `bg-[#D1EFCB]`,
-		containerTitle: `text-2xl font-bold`,
+		containerTitle: `text-4xl font-bold`,
 		containerInfo: `flex flex-col gap-4 w-full`,
 		containerImage: `w-1/4 hidden sm:block`,
 
@@ -24,9 +24,9 @@
 		stepImage: `h-40`,
 		// stepInfo: `invisible lg:visible`,
 		stepInfo: `text-center hidden sm:block sm:max-w-md`,
-		stepTitle: `text-xl font-bold`,
+		stepTitle: `text-2xl font-bold`,
 
-		containerInfoTitle: `text-xl font-bold`,
+		containerInfoTitle: `text-2xl font-bold`,
 		containerBoldInfo: `font-bold`,
 
 		signUpForm: `flex flex-col py-4 px-16 m-4 gap-2 bg-[#D1EFCB] items-center`,
