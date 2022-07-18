@@ -4,7 +4,7 @@
 	};
 
 	const style = {
-		wrapper: `bg-white flex justify-center items-center w-full `,
+		wrapper: `bg-white flex justify-center items-center w-full`,
 		bannerContainer: `px-10 py-20 flex justify-center items-center`,
 		banner: `bg-white grid md:grid-cols-2 items-center max-w-6xl`,
 		bannerImageContainer: `w-10%`,
@@ -12,7 +12,7 @@
 		tagLine: `flex flex-col justify-center items-center`,
 		investButton: `py-1 px-6 bg-[#D1EFCB]`,
 
-		container: `px-10 py-20 flex flex-col justify-center items-center`,
+		container: `px-10 py-28 flex flex-col justify-center items-center text-lg`,
 		containerContent: `flex justify-center items-center gap-6 max-w-6xl pt-6`,
 		greenContainer: `bg-[#D1EFCB]`,
 		containerTitle: `text-4xl font-bold`,
