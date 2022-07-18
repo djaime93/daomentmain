@@ -1,8 +1,8 @@
 <script>
 	const style = {
-		wrapper: `px-10 py-4 flex justify-between items-center sticky top-0 text-[#D1EFCB] bg-black z-10`,
+		wrapper: `px-6 sm:px-10 py-4 flex justify-between items-center sticky top-0 text-[#D1EFCB] bg-black z-10`,
 		nav: `flex items-center gap-2`,
-		navItems: `mx-1 text-lg`,
+		navItems: `text-lg`,
 		logo: `w-10`,
 		accountInfo: `flex items-center gap-2`,
 		createAccountButton: `p-2 text-black bg-[#D1EFCB]`

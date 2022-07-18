@@ -1,7 +1,7 @@
 <script>
 	const style = {
-		warpper: `bg-[#071E26] px-10 py-6 text-[#D1EFCB] flex`,
-		logo: `flex justify-start items-start max-w-32 max-h-32`,
+		warpper: `bg-[#071E26] px-6 sm:px-10 py-6 text-[#D1EFCB] flex items-center`,
+		logo: `flex max-w-20 max-h-20 sm:max-w-32 sm:max-h-32`,
 		infoWrapper: `flex flex-col justify-center w-full gap-1`,
 		inline: `items-center text-end`,
 		link: ``
