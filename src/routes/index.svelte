@@ -10,14 +10,14 @@
 		bannerImageContainer: `w-10%`,
 		bannerImage: `max-w-10`,
 		tagLine: `flex flex-col justify-center items-center`,
-		investButton: `py-1 px-6 bg-[#D1EFCB]`,
+		investButton: `py-2 px-6 bg-[#D1EFCB]`,
 
 		container: `px-10 py-28 flex flex-col justify-center items-center text-lg`,
 		containerContent: `flex justify-center items-center gap-6 max-w-6xl pt-6`,
 		greenContainer: `bg-[#D1EFCB]`,
-		containerTitle: `text-4xl font-bold`,
+		containerTitle: `text-4xl font-bold pb-10 text-center md:text-left`,
 		containerInfo: `flex flex-col gap-4 w-full`,
-		containerImage: `w-1/4 hidden sm:block`,
+		containerImage: `w-1/2 lg:w-1/4 hidden md:block`,
 
 		stepItems: `p-4 gap-4 grid md:grid-cols-3 justify-center items-center max-w-6xl`,
 		stepItem: `flex flex-col justify-center items-center gap-6`,
@@ -26,11 +26,12 @@
 		stepInfo: `text-center hidden sm:block sm:max-w-md`,
 		stepTitle: `text-2xl font-bold`,
 
-		containerInfoTitle: `text-2xl font-bold`,
+		containerInfoTitle: `text-2xl font-bold pt-4 pb-2`,
+		containerSubInfo: `py-2`,
 		containerBoldInfo: `font-bold`,
 
-		signUpForm: `flex flex-col py-4 px-16 m-4 gap-2 bg-[#D1EFCB] items-center`,
-		button: `py-1 px-6 bg-[#071E26] text-[#D1EFCB]`,
+		signUpForm: `flex flex-col py-10 px-10 md:px-20 m-4 gap-2 bg-[#D1EFCB] items-center`,
+		button: `py-2 px-6 mt-6 bg-[#071E26] text-[#D1EFCB]`,
 
 		trimMobile: `hidden lg:block`
 		// trimMobile: `invisible lg:visible,
@@ -132,22 +133,22 @@
 			<div class={style.containerInfo}>
 				<div class="">
 					<div class={style.containerInfoTitle}>Real Estate</div>
-					<p>
+					<p class={style.containerSubInfo}>
 						<span class={style.containerBoldInfo}>Passive income:</span> when buildings generate income,
 						investors receive distributions
 					</p>
-					<p>
+					<p class={style.containerSubInfo}>
 						<span class={style.containerBoldInfo}>Inflation hedge:</span> rising rents create opportunities
 						for higher distributions
 					</p>
 				</div>
 				<div>
 					<div class={style.containerInfoTitle}>Tokenized Real Estate</div>
-					<p>
+					<p class={style.containerSubInfo}>
 						<span class={style.containerBoldInfo}>Diversification:</span> individual real estate asset
 						performance is generally less correlated to public markets
 					</p>
-					<p>
+					<p class={style.containerSubInfo}>
 						<span class={style.containerBoldInfo}>Greater control:</span> take part in relevant investment
 						decisions such as when to sell and what property improvements to invest in
 					</p>
@@ -166,10 +167,16 @@
 		<div id="sign-up">
 			<form action="action_page.php">
 				<div class={style.signUpForm}>
-					<h1 class="text-center">Get notifications about our first tokenized property</h1>
+					<h1 class="text-center mb-6">Get notifications about our first tokenized property</h1>
 
-					<label for="email"><b>Email</b></label>
-					<input class="text-center" type="text" placeholder="Enter Email" name="email" required />
+					<!-- <label for="email"><b>Email</b></label> -->
+					<input
+						class="text-center py-1 w-full"
+						type="text"
+						placeholder="Enter Email"
+						name="email"
+						required
+					/>
 
 					<a class={style.button} on:click={sendEmailAddress} href="/emailsent">Enter</a>
 				</div>
